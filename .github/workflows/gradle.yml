@@ -38,7 +38,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: "allmusic_server_folia"
-        path: build/libs/
+        path: build/libs/*.jar
   build_bukkit:
     runs-on: windows-latest
     permissions:
@@ -60,7 +60,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: "allmusic_server_bukkit"
-        path: build/libs/
+        path: build/libs/*.jar
   build_bungeecord_velocity:
     runs-on: windows-latest
     permissions:
@@ -82,7 +82,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: "allmusic_server_bungeecord_velocity"
-        path: build/libs/
+        path: build/libs/*.jar
   build_fabric_1_16_5:
     runs-on: windows-latest
     permissions:
@@ -104,7 +104,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: "allmusic_server_fabric_1_16_5"
-        path: build/libs/
+        path: build/libs/*.jar
   build_fabric_1_18_2:
     runs-on: windows-latest
     permissions:
@@ -434,7 +434,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: "allmusic_server_forge_1_20"
-        path: build/libs/
+        path: build/libs/*.jar
   build_neoforge_1_20_4:
     runs-on: windows-latest
     permissions:
